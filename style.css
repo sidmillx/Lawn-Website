@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Poppins';
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    border-bottom: solid 1px gray;
+    box-shadow: 0px 0px 1px 0px black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    background: darkgreen;
+    color: white;
+
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px 15px;
+    color: white;
+}
+
+.nav-btn {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.login {
+    background: transparent;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+.signup {
+    background-color: black;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+.signup a {
+    color: white;
+}
+
+
+/* HERO SECTION */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.hero-section p {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.hero-section div {
+    text-align: center;
+}
+
+.hero-section input[type="email"]{
+    width: 350px;
+    outline: none;
+
+}
+.hero-section input[type="email"], button{
+    padding: 11px 5px;
+}
+
+
+.hero-section button {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+    border: solid 2px darkgreen;
+    cursor: pointer;
+}
+
+
+/* KEY FEATURES */
+section.key-features-section {
+    background-color: #eee;
+    padding-bottom: 50px;
+    
+}
+
+.feature img {
+    width: 100px;
+}
+
+section.key-features-section, .how-it-works {
+    text-align: center;
+    padding: 20px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.key-features-section h2, .how-it-works h2 {
+    text-align: center;
+    padding: 50px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.circle {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    }
+      
+
+
+#ready {
+    background: darkgreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    text-align: center;
+}
+
+.ready-container h2 {
+    margin: 5px;
+    font-size: 2em;
+}
+
+.ready-container p {
+    margin: 10px;
+}
+
+.ready-container input[type="email"]{
+    width: 350px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+.ready-container input[type="email"], button{
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* PRICING PAGE */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.duration {
+    background-color: darkgreen;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.pricing {
+    width: 300px;
+    border: solid 1px #eee;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.first-element {
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.first-element h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tier-sub {
+    font-size: 0.8em;
+}
+
+.price {
+    font-size: 2em;
+}
+
+.pricing-btn {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.pricing * {
+    margin: 10px;
+}
+
+.pricing ul {
+    list-style: none;
+}
+
+.pricing ul li:before {
+    content: '✔';
+    margin: 0 5px;
+}
+
