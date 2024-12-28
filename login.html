@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 300px;
+            border: solid 1px white;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .container > * {
+            margin: 10px 0;
+        }
+
+
+        .container form * {
+            margin: 5px 0;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px 15px;
+            background-color: darkgreen;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 7px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Sign in</h2>
+        <form>
+            <div>
+                <label for="email">Email or username</label><br>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <div>
+            <input type="checkbox" name="stay-signed-in" id="stay-signed-in">
+            <label for="stay-signed-in">Stay signed in</label>
+        </div>
+        <p><a href="#">Forgot password?</a></p>
+    </div>
+</body>
+</html>
