@@ -9,7 +9,7 @@ body {
     font-family: 'Poppins';
     position: relative;
 }
-nav {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -282,5 +282,61 @@ footer ul {
 
 
 @media screen and (max-width: 700px){
+
+}
+
+
+
+.humburger {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 5px 0;
+    }
+
+    nav {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: darkgreen;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    nav.active {
+        height: 450px;
+    }
+
+    nav ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    nav ul li a {
+        margin-bottom: 12px;
+        color: red;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 
 }

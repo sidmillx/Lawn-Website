@@ -7,31 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <nav>
-            <h1>MowNow</h1>
-            <ul>
-                <li><a href="index.html">How it Works</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="#">About us</a></li>
-            </ul>
-            <div>
-                <button class="nav-btn login"><a href="login.html">Login</a></button>
-                <button class="nav-btn signup"><a href="#">Sign Up</a></button>
-            </div>
-        </nav>
-        <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <header>
+        <div class="logo">MowNow</div>
+         <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-    </div>
+        <nav class="nav">
+                <ul>
+                    <li><a href="index.html">How it Works</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <!-- <div>
+                    <button class="nav-btn login"><a href="login.html">Login</a></button>
+                    <button class="nav-btn signup"><a href="#">Sign Up</a></button>
+                </div> -->
+        </nav>
+       
+    </header>
     <section class="hero-section">
         <div>
             <h1>On-Demand Lawn Mowing</h1>
             <p style="color: #4A4A4A;">Book a professional lawn mower in minutes. Get your lawn looking pristine without the hassle</p>
-            <div>
+            <div class="hero-content">
                 <input type="email" placeholder="Enter your email here...">
                 <button>Find Mowers</button>
             </div>
@@ -100,5 +101,14 @@
             </ul>
         </div>
     </footer>
+
+
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+        hamburger.onclick = function() {
+            navBar = document.querySelector('.nav');
+            navBar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
