@@ -338,5 +338,17 @@ footer ul {
         flex-wrap: wrap;
     }
 
+    .features {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 90%;
+ 
+    }
 
+    /* section.how-it-works {
+        margin-bottom: 80px;
+    } */
+
+ 
 }
